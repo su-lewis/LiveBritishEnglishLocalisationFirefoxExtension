@@ -1,0 +1,48 @@
+/* The invisible layer that draws the blue squiggly lines */
+.brit-overlay {
+    position: absolute;
+    pointer-events: none;
+    color: transparent !important;
+    overflow: hidden;
+    z-index: 2147483646;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* The Commonwealth Blue underline */
+.brit-error {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #4169E1; /* Royal / Commonwealth Blue */
+    text-decoration-thickness: 2px;
+    color: transparent;
+    background: transparent;
+}
+
+/* The little pop-up menu at your mouse cursor */
+.brit-fix-menu {
+    position: fixed;
+    background: #ffffff;
+    border: 2px solid #4169E1;
+    border-radius: 6px;
+    padding: 6px 12px;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+    z-index: 2147483647;
+    display: none; /* Hidden by default */
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+}
+
+.brit-fix-menu:hover {
+    background: #f0f4ff;
+}
+
+.brit-fix-menu strong {
+    color: #4169E1;
+    font-size: 15px;
+}
